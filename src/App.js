@@ -1,16 +1,8 @@
-import { FoodList } from "./stateManager/stateContext"; 
-import Aos from "aos";
+ import Aos from "aos";
 import 'aos/dist/aos.css'
-
-import About from "./components/About";
-import Food from "./components/Food";
-import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import PopularFood from "./components/PopularFood";
-import Reservation from './components/Reservation';
-import Chefs from "./components/Chefs";
-import Testemonials from "./components/Testemonials";
-import Footer from "./components/Footer";
+
+
 
 function App() {
 
@@ -19,19 +11,11 @@ function App() {
   })
 
   return (
-    <FoodList>
-      <div className='mx-4 sm:mx-9 md:mx-12'>
-        <Navbar />
-        <Home />
-        <PopularFood />
-        <About />
-        <Food />
-        <Reservation />
-        <Testemonials />
-        <Chefs />
-        <Footer />
-      </div>
-    </FoodList>
+  
+    <div className='mx-2 sm:mx-3 md:mx-5'>
+      <Navbar />
+    </div>
+   
     
   );
 }

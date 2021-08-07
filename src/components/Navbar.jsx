@@ -1,7 +1,5 @@
 import {useState} from 'react'
-
 import NavItems from "./SharedComponets/NavItems";
-import { BiBasket } from 'react-icons/bi'
 import {CgMenuRight, CgMenuLeft} from 'react-icons/cg'
 
 function Navbar() {
@@ -17,29 +15,18 @@ function Navbar() {
     }
 
     return (
-        <nav className="w-full bg-[#fffcf7] z-50 py-4 transition duration-1000">
-            <div className="flex justify-between w-full items-center m-auto">
+        <nav className="w-full bg-white z-50 py-4 transition duration-1000">
+            <div className="w-11/12 flex items-center justify-between m-auto">
 
-                <div><a href="#AboutUs" className="logo">WeBite</a></div>
+                
 
-                <ul className={`z-50 md:tablet ${show === true ? 'left-0': '-left-full'} flex phone`}>
-                    <NavItems href="#About">About Us</NavItems>
-                    <NavItems href="#Menu">Menu</NavItems>
-                    <NavItems href="#Reviews">Reviews</NavItems>
-                    <NavItems href="#Blog">Blog</NavItems>
-                    <NavItems href="#Contacts">Contacts</NavItems>
-                    <div onClick={onclick} className='absolute top-5 right-8 text-3xl text-[#927b71] md:hidden'>
-                        <CgMenuLeft />
-                    </div>
+                <ul className="fixed top-0 right-0 flex flex-col h-screen w-max">
+                    <NavItems href='#Home'>Home</NavItems>
+                    <NavItems href='#Home'>Home</NavItems>
+                    <NavItems href='#Home'>Home</NavItems>
+                    <NavItems href='#Home'>Home</NavItems>
+                    <NavItems href='#Home'>Home</NavItems>
                 </ul>
-
-                <div className='hidden space-x-8 md:flex items-center'>
-                    <a href="#home" className='navIcon hover:bg-[#f3bc58]'><BiBasket /></a>
-                    <a href="#home" className='btn'>Reserve Table</a>
-                </div>
-
-                <CgMenuRight onClick={onclick} className={`text-3xl text-[#f3bc58] ${show === true ? 'hidden' : 'block'} md:hidden`} />
-
             </div>
         </nav>
     )

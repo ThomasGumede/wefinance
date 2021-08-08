@@ -1,10 +1,47 @@
+import Card from "./SharedComponets/Card"
 
 const About = () => {
 
 
     return (
-        <div className='space-y-6 my-16 md:my-20 flex flex-col sm:flex-row space-x-8 justify-between items-center sm:space-y-0 lg:m-20'>
+        <div data-aos='zoom-in' className='relative bg-[#f8fafb] space-y-6'>
+            <div data-aos='fade-down' data-aos-delay='300' className="absolute top-0 right-0 w-max hidden md:flex items-center space-x-6 bg-white px-14 py-6 rounded-l-xl">
+                <div className='space-y-2'>
+                    <h5 className="text-xl font-bold text-[#042352]">
+                        3.400k
+                    </h5>
+                    <p className="text-sm text-[#5c667b]">
+                        Active Users Joined
+                    </p>
+                </div>
+                <div className='space-y-2'>
+                    <h5 className="text-xl font-bold text-[#042352]">
+                        5.5%
+                    </h5>
+                    <p className="text-sm text-[#5c667b]">
+                        Monthly Interest
+                    </p>
+                </div>
+                <div className='space-y-2'>
+                    <h5 className="text-xl font-bold text-[#042352]">
+                        10x
+                    </h5>
+                    <p className="text-sm text-[#5c667b]">
+                        Faster Recording
+                    </p>
+                </div>
+            </div>
+            <div data-aos='fade-down' data-aos-delay='400' className="p-11 text-3xl lg:text-4xl font-semibold text-[#042352]  px-4 sm:px-6 md:px-16 lg:px-20">
+                <h1 className="">
+                    Why You Should Join Us?
+                </h1> 
+            </div>
             
+            <div data-aos='fade-down' data-aos-delay='500' className="grid sm:grid-cols-2 md:grid-cols-3 items-center justify-center gap-4 p-11 px-4 sm:px-6 md:px-16 lg:px-20">
+                <Card />
+                <Card />
+                <Card />
+            </div>
         </div>
     )
 }

@@ -2,15 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Righteous&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Righteous&display=swap");
 
 @layer base {
-    body {
-        @apply bg-white font-sans box-border w-full overflow-x-hidden
-    }
+  body {
+    @apply bg-white font-sans box-border w-full overflow-x-hidden;
+  }
 }
 
 @layer components {
-   
+  .btn {
+    @apply bg-[#009366] w-[120px] text-center text-white font-medium text-sm md:text-lg py-2 px-4 rounded-sm;
+  }
+
+  .logo {
+    @apply font-bold text-[#042352] text-2xl md:text-3xl;
+  }
+  .phone {
+    @apply fixed top-0 bg-[#042352] flex-col h-screen max-w-[400px] w-full pt-14 items-center transition-all duration-500 ease-linear;
+  }
+
+  .tablet {
+    @apply flex-row relative max-w-none w-auto h-auto bg-transparent pt-0 left-auto;
+  }
+
+  .hoverButton {
+    @apply bg-[#009366] text-white;
+  }
+
+  .hov {
+    @apply absolute left-0 bottom-0 w-0 h-[2px] bg-[#5c667b] rounded-full transition-all duration-300 ease-linear;
+  }
+
+  .hov2 {
+    @apply absolute left-0 bottom-0 w-full h-[2px] bg-[#5c667b] rounded-full;
+  }
 }

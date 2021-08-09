@@ -1,4 +1,6 @@
 import Card from "./SharedComponets/Card"
+import {CgFileDocument} from 'react-icons/cg'
+import {RiWallet3Line, RiFolder4Line} from 'react-icons/ri'
 
 const About = () => {
 
@@ -37,10 +39,10 @@ const About = () => {
                 </h1> 
             </div>
             
-            <div data-aos='fade-down' data-aos-delay='500' className="grid sm:grid-cols-2 md:grid-cols-3 items-center justify-center gap-4 p-11 px-4 sm:px-6 md:px-16 lg:px-20">
-                <Card />
-                <Card />
-                <Card />
+            <div data-aos='fade-down' data-aos-delay='500' className="grid xsm:grid-cols-2 md:grid-cols-3 items-center justify-center gap-4 p-11 px-4 sm:px-6 md:px-16 lg:px-20">
+                <Card icon={<CgFileDocument/>} title='Financial report' descr='Your just monitor financial reports easly'/>
+                <Card icon={<RiFolder4Line/>} title='Auto recap finance' descr="Don't dizziness. here already auto-recapped" />
+                <Card icon={<RiWallet3Line/>} title='Unlimited cashback' descr="you can get unlimited cashback, so let's get it." />
             </div>
         </div>
     )

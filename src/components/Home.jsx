@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div
       id="#home"
-      className="relative space-y-4 w-full sm:flex md:space-x-6 items-center my-11 px-4 sm:px-6 md:px-16 lg:px-20"
+      className="relative space-y-4 w-full sm:flex md:space-x-6 items-center p-11 my-11 px-4 sm:px-6 md:px-16 lg:px-20"
     >
       <div data-aos='zoom-in' className="space-y-11 sm:w-[400px] md:w-[500px] h-[300px] md:h-[400px]">
         <h1 data-aos='fade-down' data-aos-delay='400' className="text-2xl md:text-5xl font-normal text-[#042352]">
@@ -27,7 +27,7 @@ const Home = () => {
             </div>
             <div className="flex items-center space-x-5">
                 <div>
-                    <GrCirclePlay className='w-[20px] h-[20px] xsm:w-[25px] xsm:h-[25px] text-[#5c667b]'/>
+                    <GrCirclePlay className='w-[20px] h-[20px] xsm:w-[25px] xsm:h-[25px]' color='#5c667b'/>
                 </div>
                 <div>
                     <a href="http://" className='text-sm md:text-base font-normal text-[#5c667b]'>

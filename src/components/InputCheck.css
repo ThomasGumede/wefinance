@@ -1,0 +1,12 @@
+input:checked ~ .dot {
+    transform: translateX(100%);
+    background-color: #fff;
+}
+
+input:checked ~ .back {
+    background-color: #009366;
+}
+
+input:checked ~ .color {
+    color: #009366 !important;
+}

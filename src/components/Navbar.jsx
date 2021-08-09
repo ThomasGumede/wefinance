@@ -42,12 +42,13 @@ function Navbar() {
             </a>
           </li>
 
-          <div
+          <li
             onClick={onclick}
             className="absolute top-5 right-8 text-3xl text-white md:hidden"
           >
-            <CgMenuLeft />
-          </div>
+            <CgMenuLeft onClick={onclick}
+            className="absolute top-5 right-8 text-3xl text-white md:hidden"/>
+          </li>
         </ul>
 
         <CgMenuRight

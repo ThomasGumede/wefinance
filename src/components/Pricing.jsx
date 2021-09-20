@@ -11,7 +11,6 @@ const Pricing = () => {
 
   const onclick = () => (show === false ? setShow(true) : setShow(false));
 
-  console.log(show);
 
   return (
     <div className="flex flex-col space-y-5 text-center bg-[#f8fafb] p-11 my-14 px-4 sm:px-6 md:px-16 lg:px-20">
